@@ -1,5 +1,9 @@
 export default {
   mode: 'universal',
+
+  generate: {
+    routes: ['/posts/number-1', '/posts/number-2', '/posts/number-3']
+  },
   /*
    ** Headers of the page
    */
