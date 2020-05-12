@@ -1,12 +1,37 @@
 <template>
   <nav>
-    <nuxt-link :to="{ name: 'index' }">Link to home</nuxt-link>
+    <ul>
+      <li>
+        <nuxt-link :to="{ name: 'index' }">Home</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link :to="{ name: 'email-subscriptions' }"
+          >Email subscriptions</nuxt-link
+        >
+      </li>
+    </ul>
   </nav>
 </template>
 
 <style lang="scss" scoped>
 nav {
-  border: 1px solid red;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: black;
+  padding: 48px;
+  width: 320px;
+  height: 100vh;
+}
+
+li + li {
+  margin-top: 6px;
+}
+
+a {
+  color: white;
 }
 </style>
 
